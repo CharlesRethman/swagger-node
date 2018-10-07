@@ -1,7 +1,7 @@
 {
-  "name": "swagger",
+  "name": "@chezearth/swagger",
   "version": "0.7.5",
-  "description": "The Swagger command-line. Provides Swagger utilities and project lifecycle support.",
+  "description": "The Swagger command-line. Provides Swagger utilities and project lifecycle support. Updated to fix package dependencies vulnerability issues.",
   "keywords": [
     "swagger",
     "api",
@@ -15,9 +15,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swagger-api/swagger-node.git"
+    "url": "https://github.com/chezearth/swagger-node.git"
   },
   "dependencies": {
+    "@chezearth/swagger-test-templates": "^1.4.4",
     "async": "^2.1.4",
     "commander": "^2.7.1",
     "connect": "^3.3.5",
@@ -31,7 +32,6 @@
     "serve-static": "^1.9.2",
     "swagger-converter": "^1.4.1",
     "swagger-editor": "^2.9.2",
-    "swagger-test-templates": "^1.2.0",
     "swagger-tools": "^0.10.1"
   },
   "devDependencies": {
