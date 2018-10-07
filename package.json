@@ -1,6 +1,6 @@
 {
   "name": "@chezearth/swagger",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "The Swagger command-line. Provides Swagger utilities and project lifecycle support. Updated to fix package dependencies vulnerability issues.",
   "keywords": [
     "swagger",
