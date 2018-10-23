@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/swagger-api/swagger-node/status.svg)](https://david-dm.org/swagger-api/swagger-node)
 [![devDependency Status](https://david-dm.org/swagger-api/swagger-node/dev-status.svg)](https://david-dm.org/swagger-api/swagger-node#info=devDependencies)
 
-> ##Note
+> ## Note
 
 > This is a fork of swagger-api/swagger-node and the text below is mostly the work of [Scott Ganyo](https://github.com/theganyo). I have only updated some dependencies to remove vulnerabilities that were identified by NPM's audit. In this version, Travis builds successfully only for Node v8 (I am working on getting 4-10 to build properly and all tests on those versions to pass). While the tests for Node v8 passed and the package seems to work for me, the new dependencies may have broken something that I haven't found yet.
 
