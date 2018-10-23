@@ -231,20 +231,13 @@ describe('cli', function() {
       it('should print the result of the command', function() {
 
         cli.execute(executeNoError)(1);
-//        console.log('exitCode =', exitCode);
-//        console.log('typeof exitCode =', typeof exitCode);
-//        console.log('capture.output() =\n', capture.output());
         exitCode.should.equal(0);
-//        capture.output().should.equal(1);
         capture.output().should.equal('1\n');
       });
 
       it('should print the result with header', function() {
 
         cli.execute(executeNoError, 'whatever')(1);
-//        console.log('exitCode =', exitCode);
-//        console.log('typeof exitCode =', typeof exitCode);
-//        console.log('capture.output() =\n', capture.output());
         exitCode.should.equal(0);
         capture.output().should.equal('whatever\n========\n1\n');
       });
