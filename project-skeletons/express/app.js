@@ -1,6 +1,6 @@
 'use strict';
 
-var SwaggerExpress = require('swagger-express-mw');
+var SwaggerExpress = require('@chezearth/swagger-express-mw');
 var app = require('express')();
 // export setup Promis for testing
 module.exports = new Promise(function (resolve, reject) {

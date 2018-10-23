@@ -9,7 +9,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.15.2",
-    "swagger-express-mw": "^0.7.0"
+    "@chezearth/swagger-express-mw": "^0.7.2"
   },
   "devDependencies":  {
     "should": "^11.2.1",

@@ -46,7 +46,7 @@
     "z-schema": "^3.14.0"
   },
   "scripts": {
-    "test": "mocha -u exports -R spec test/config.js test/util test/commands test/commands/project test/project-skeletons",
+    "test": "mocha -u exports --exit -R spec test/config.js test/util test/commands test/commands/project test/project-skeletons",
     "coverage": "istanbul cover _mocha -- -u exports -R spec test/config.js test/util test/commands test/commands/project test/project-skeletons",
     "start": "node app.js"
   },
