@@ -7,7 +7,7 @@
 
 > This is a fork of swagger-api/swagger-node and the text below is mostly the work of [Scott Ganyo](https://github.com/theganyo). I have only updated some dependencies to remove vulnerabilities that were identified by NPM's audit. In this version, Travis builds successfully only for Node v8 (I am working on getting 4-10 to build properly and all tests on those versions to pass). While the tests for Node v8 passed and the package seems to work for me, the new dependencies may have broken something that I haven't found yet.
 
-> If you use this package, you *__must__* use it with NodeJS version 8 only. I have also found that the Editor doesn't work properly if this package is installed in your local node_modules directory, so it is best to install it globally (`npm i -g swagger` -- see more details below about root access). Charles Rethman
+> If you use this package, you **must** use it with NodeJS version 8 and above (I use [nvm](https://github.com/creationix/nvm) to easily switch versions). I have also found that the Editor doesn't work properly if this package is installed in your local node_modules directory, so it is best to install it globally (`npm i -g swagger` -- see more details below about root access). Charles Rethman
 
 The `swagger` module provides tools for designing and building Swagger-compliant APIs entirely in Node.js. It integrates with popular Node.js servers, including Express, Hapi, Restify, and Sails, as well as any Connect-based middleware. With `swagger`, you can specify, build, and test your API from the very beginning, on your laptop. It allows you to change and iterate your design without rewriting the logic of your implementation.
 
