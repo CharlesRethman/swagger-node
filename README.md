@@ -5,9 +5,9 @@
 
 > ## Note
 > This is a fork of Scott Ganyo's popular [swagger-api/swagger-node](https://github.com/swagger-api/swagger-node), which I believe is a great project. I would like to update it and to this end I am focussing on three things:
-  - Updating the dependencies to get rid of vulnerabilities
-  - Updating the Swagger libraries to handle the new OpenAPI 3.0 standards (much better than Swagger 2 in my view)
-  - Ensuring the Swagger Tools (validator, router, etc.) work with modern (ES2017+) JavaScript, especially `async`/`await`.
+> - Updating the dependencies to get rid of vulnerabilities
+> - Updating the Swagger libraries to handle the new OpenAPI 3.0 standards (much better than Swagger 2 in my view)
+> - Ensuring the Swagger Tools (validator, router, etc.) work with modern (ES2017+) JavaScript, especially `async`/`await`.
 >
 > Along the way, I expect to add more tests and to change some aspects of the code. I would like the product to work on NodeJS v6 or newer, as I think it is unlikely many people will start a new project in an older version -- and this library is for new projects. So far, I have only updated one dev dependency, `mocha`, to remove a critical vulnerability identified by NPM's audit. It has broken the code and tests. I am working on getting the `create` command sequence to execute (the app exits after choosing the framework) and then the tests to pass. Then Travis should build successfully with Node v6, v8, v10 and v11.
 >
