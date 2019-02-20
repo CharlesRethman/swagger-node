@@ -1,7 +1,19 @@
-[![Build Status](https://travis-ci.org/swagger-api/swagger-node.svg?branch=master)](https://travis-ci.org/swagger-api/swagger-node) 
+[![Build Status](https://travis-ci.org/swagger-api/swagger-node.svg?branch=master)](https://travis-ci.org/swagger-api/swagger-node)
 [![NPM version](https://badge.fury.io/js/swagger.png)](http://badge.fury.io/js/swagger)
 [![Dependency Status](https://david-dm.org/swagger-api/swagger-node/status.svg)](https://david-dm.org/swagger-api/swagger-node)
 [![devDependency Status](https://david-dm.org/swagger-api/swagger-node/dev-status.svg)](https://david-dm.org/swagger-api/swagger-node#info=devDependencies)
+
+> ## Note
+> This is a fork of Scott Ganyo's popular [swagger-api/swagger-node](https://github.com/swagger-api/swagger-node), which I believe is a great project. I would like to update it and to this end I am focussing on three things:
+> - Updating the dependencies to get rid of vulnerabilities
+> - Updating the Swagger libraries to handle the new OpenAPI 3.0 standards (much better than Swagger 2 in my view)
+> - Ensuring the Swagger Tools (validator, router, etc.) work with modern (ES2017+) JavaScript, especially `async`/`await`.
+>
+> Along the way, I expect to add more tests and to change some aspects of the code. I would like the product to work on NodeJS v6 or newer, as I think it is unlikely many people will start a new project in an older version -- and this library is for new projects. So far, I have only updated one dev dependency, `mocha`, to remove a critical vulnerability identified by NPM's audit. It has broken the code and tests. I am working on getting the `create` command sequence to execute (the app exits after choosing the framework) and then the tests to pass. Then Travis should build successfully with Node v6, v8, v10 and v11.
+>
+> The workaround for the `swagger project create` to work is to specify your project name and framework (with -f <framework>, e.g. swagger project create myProject -f express) in the command and bypass the menu.
+>
+> I have also found that the Editor doesn't work properly if this package is installed in your local node_modules directory, so it is best to install it globally (`npm i -g @chezearth/swagger` -- see more details in the install docs about root access). [Charles Rethman](https://github.com/chezearth).
 
 
 The `swagger` module provides tools for designing and building Swagger-compliant APIs entirely in Node.js. It integrates with popular Node.js servers, including Express, Hapi, Restify, and Sails, as well as any Connect-based middleware. With `swagger`, you can specify, build, and test your API from the very beginning, on your laptop. It allows you to change and iterate your design without rewriting the logic of your implementation.
