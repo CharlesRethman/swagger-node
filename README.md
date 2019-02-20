@@ -11,7 +11,7 @@
 >
 > Along the way, I expect to add more tests and to change some aspects of the code. I would like the product to work on NodeJS v6 or newer, as I think it is unlikely many people will start a new project in an older version -- and this library is for new projects. So far, I have only updated one dev dependency, `mocha`, to remove a critical vulnerability identified by NPM's audit. It has broken the code and tests. I am working on getting the `swagger project create` sequence to execute properly (the app exits after choosing the framework) and then to get the tests to pass. Then Travis should build successfully with Node v6, v8, v10 and v11.
 >
-> The workaround for the `create` command to work is to specify your project name and framework (with -f <framework>), e.g.
+> The workaround for the `create` command to work is to specify your project name and framework (with `-f <framework>`), e.g.
 > ```bash
 > swagger project create myProject -f express
 > ```
